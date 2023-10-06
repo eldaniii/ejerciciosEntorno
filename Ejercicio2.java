@@ -5,7 +5,10 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		float distancia;
 		float velocidadMedia;
-		int tiempoRestMin;
+		float tiempoRest;
+		float parteDecimal; 
+		float parteEntera;
+		String resultadoMensaje;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -14,8 +17,11 @@ public class Ejercicio2 {
 		System.out.println("Ingresa la velocidad media en (k/h):");
 		velocidadMedia=sc.nextFloat();
 		
-		tiempoRestMin= (int) (distancia/velocidadMedia)*60;
-		System.out.println("El tiempo restante es de: "+tiempoRestMin+" minutos");
+		tiempoRest= (distancia/velocidadMedia); 
+		parteDecimal = tiempoRest % 1; //La parte entera se pasa a minutos.
+		parteEntera = tiempoRest - parteDecimal; //La parte entera está en horas.
+		resultadoMensaje="El tiempo restante es de: "+parteEntera+"horas y "+parteDecimal*60+" minutos.";
+		System.out.println(resultadoMensaje);
 	}
 	
 }
