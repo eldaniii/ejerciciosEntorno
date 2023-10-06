@@ -7,8 +7,8 @@ public class Ejercicio2 {
 		float velocidadMedia;
 		float tiempoRest;
 		
-		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Ingresa la distancia a recorrer en kilómetros:");
 		distancia=sc.nextFloat();
 		System.out.println("Ingresa la velocidad media en (k/h):");
