@@ -22,7 +22,7 @@ public class Ejercicio3 {
 		if (b>a)
 			if (b>c) numMayor=b;
 			else numMayor=c;
-		else numMayor=c;;
+		else numMayor=c;
 		
 		System.out.println("El número mayor es: "+numMayor);
 		
